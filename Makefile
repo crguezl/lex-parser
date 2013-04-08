@@ -5,7 +5,7 @@ install:
 	npm install
 
 build:
-	node ./node_modules/.bin/jison lex.y lex.l
+	NODE_PATH=.:../ebnf-parser/ node ./node_modules/.bin/jison lex.y lex.l
 	mv lex.js lex-parser.js
 
 test:
