@@ -11,3 +11,5 @@ build:
 test:
 	node tests/all-tests.js
 
+node_modules:
+	ln -s ../ebnf-parser/node_modules
